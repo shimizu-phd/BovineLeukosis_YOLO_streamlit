@@ -1,6 +1,6 @@
 import streamlit as st
-from ultralytics import YOLO
 import pandas as pd
+from ultralytics import YOLO
 from PIL import Image
 import numpy as np
 import cv2
