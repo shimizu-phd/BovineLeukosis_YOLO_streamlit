@@ -1,0 +1,9 @@
+torch
+torchvision
+torchaudio
+ultralytics
+streamlit
+pandas
+pillow
+numpy
+opencv-python
