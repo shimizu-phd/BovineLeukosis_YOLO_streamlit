@@ -1,9 +1,9 @@
+streamlit
+pandas
+numpy
+opencv-python
+ultralytics
+Pillow
 torch
 torchvision
 torchaudio
-ultralytics
-streamlit
-pandas
-pillow
-numpy
-opencv-python
