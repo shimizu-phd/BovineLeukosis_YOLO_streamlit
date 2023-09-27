@@ -7,4 +7,3 @@ Pillow
 torch
 torchvision
 torchaudio
-git+https://github.com/gatagat/lap@new-packaging
