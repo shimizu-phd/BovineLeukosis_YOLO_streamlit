@@ -156,6 +156,7 @@ with tab2:
     crop_height = 240
 
     uploaded_file = st.file_uploader("ファイルアップロード", type=['png', 'jpg', 'jpeg', 'webp'], accept_multiple_files=False)
+    st.write('解析したいファイルと同じシステムで撮影した赤血球の写った画像をアップロードして、リファレンスの画像と大きさを比較してください.')
     if uploaded_file:
         img_ref = Image.open('reference.jpg')
         img_ref = img_ref.convert("RGB")
@@ -167,5 +168,5 @@ with tab2:
         image = np.array(image)
         image_resize = resize(image, max_length)
         image_trim = trim(image_resize, crop_width, crop_height)
-        st.image([img_ref_trim, image_trim], caption=['ref', 'input'], use_column_width=True)
+        st.image([img_ref_trim, image_trim], caption=['リファレンス', 'アップロード画像'], use_column_width=True)
         st.write('リファレンスの赤血球の直径を１としたときの入力画像の赤血球の直径を計算し、係数としてください.')
